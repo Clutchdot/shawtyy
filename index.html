@@ -1,103 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="open.css" />
-    <script>
-      function openUp() {
-        const $opentop = document.querySelector("#opentop");
-        const $top = document.querySelector("#top");
-        const $front = document.querySelector("#front");
-        const $back = document.querySelector("#back");
-        const $letter = document.querySelector("#letter");
-        const $button = document.querySelector("button");
-
-        $opentop.beginElement();
-        $top.style.zIndex = 2;
-
-        $top.classList.add("animate");
-        $front.classList.add("animate");
-        $back.classList.add("animate");
-        $button.classList.add("animate");
-        $letter.classList.add("animate");
-      }
-    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE</title>
+   <style>body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .coll {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(86, 202, 255);
+    /* border-radius: rgb(155, 28, 148); */
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+    left: -600px;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 70px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .coll-2 {
+    width: 700px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(11, 74, 168);
+    /* border-radius: rgb(155, 28, 148); */
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+    right: 350px;
+  }
+  
+  .coll-2 h2 {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .coll-3 {
+    width: 750px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(71, 206, 18);
+    /* border-radius: rgb(155, 28, 148); */
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+    left: -80px;
+    top: 20px;
+  }
+  
+  .coll-3 h2 {
+    display: inline;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    right: -30px;
+    top: 40px;
+  }
+  
+  .coll-4 {
+    width: 600px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(255, 251, 0);
+    /* border-radius: rgb(155, 28, 148); */
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+    right: -90px;
+  }
+  
+  .coll-4 h2 {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+  }
+  
+  .coll-5 {
+    width: 700px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(45, 209, 127);
+    /* border-radius: rgb(155, 28, 148); */
+    margin-top: 200px;
+    display: inline-block;
+    position: relative;
+    right: -300px;
+  }
+  
+  .coll-5 h2 {
+    font-size: 70px;
+  }
+  
+  .coll-6 {
+    width: 900px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 250ms ease, height 250ms ease;
+    border-radius: 5px;
+    background-color: rgb(193, 209, 45);
+    /* border-radius: rgb(155, 28, 148); */
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: -500px;
+  }
+  
+  .coll-6 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+  }
+  a {
+    color: red;
+    text-decoration: none;
+  }
+  </style>
   </head>
+
   <body>
-    <div class="text">
-      <h1>Hey ! Listen this is for you 💖....</h1>
+    <div id="D-coll-6" class="coll-6">
+      <h2>
+        Thank you for always accepting me as I am and for your unwavering
+        love💖.
+        <br />I have Something for you ..Again Thankyou Love
+        <a href="new.html">Click Here</a>
+      </h2>
     </div>
-    <div id="envelope">
-      <div id="back">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
-        >
-          <polygon
-            points="0,100 300,100 300,300 0,300"
-            style="fill: #4a274a; stroke: none; stroke-width: 0"
-          />
-        </svg>
-      </div>
-      <div id="front">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
-        >
-          <polygon
-            points="0,100 150,200 300,100 300,300 0,300"
-            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
-          />
-        </svg>
-      </div>
-      <div id="top">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
-        >
-          <polygon
-            points="0,100 150,200 300,100"
-            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
-          >
-            <animate
-              id="opentop"
-              attributeName="points"
-              dur="0.5s"
-              fill="freeze"
-              begin="indefinite"
-              from="0,100 150,200 300,100"
-              to="0,100 150,0 300,100"
-            />
-          </polygon>
-        </svg>
-      </div>
 
-      <div id="letter">
-        <h1>For My <span>Love</span></h1>
-
-        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
-        <p>
-          You are the person I have been dreaming all my life , so allow me to
-          express my intense love for you. You are the most precious thing in my
-          life. You have fascinated my heart and seized my mind with your
-          magnetic presence and I keep dreaming of yourself Your memories are
-          invaluable treasure of my life, which are locked inside my heart. The
-          time spent with you was the most mesmerizing and delightful of my
-          life. <br />
-          <br />
-          I take this opportunity to ask for your consent if you want to be my
-          life partner.This letter is a token of my love for you. <br />
-          If You Accept
-          <a href="new.html">Click Here</a>
-        </p>
-      </div>
-      <button onclick="openUp()">Click Here</button>
+    <div id="D-coll-5" class="coll-5">
+      <h2>😇</h2>
     </div>
+
+    <div id="D-coll-4" class="coll-4">
+      <h2>😊</h2>
+    </div>
+
+    <div id="D-coll-3" class="coll-3">
+      <h2>I wana say you some thing</h2>
+    </div>
+
+    <div id="D-coll-2" class="coll-2">
+      <h2>Wassup?</h2>
+    </div>
+
+    <div id="D-coll" class="coll">
+      <h2>Hi, 😃</h2>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/3.0.0/draggabilly.pkgd.min.js"
+      integrity="sha512-hbEWVzVt2yK7kQmJ1NZirxxO0NPtE4W09fT4f9Emem/n0rMPFHlLbuLcUcLNrtUGWGoQ8qGvKDVJnRRuCzjeZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      let el = document.getElementById("D-coll");
+      let el2 = document.getElementById("D-coll-2");
+      let el3 = document.getElementById("D-coll-3");
+      let el4 = document.getElementById("D-coll-4");
+      let el5 = document.getElementById("D-coll-5");
+
+      let draggabilly = new Draggabilly(el);
+      let draggabilly2 = new Draggabilly(el2);
+      let draggabilly3 = new Draggabilly(el3);
+      let draggabilly4 = new Draggabilly(el4);
+      let draggabilly5 = new Draggabilly(el5);
+    </script>
   </body>
 </html>
